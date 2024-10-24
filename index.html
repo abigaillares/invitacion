@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="primerContenedor">
+        
+        <div>
+            <p class="elegant teInvitamos">Te invitamos a nuestro</p>
+            <p class="lejour civil">Civil</p>
+            <p class="opensans ayg">Abigail y Gonzalo</p>
+            <img class="flechita" src="/media/flechitahaciaabajo.png" alt="">
+        </div>
+    </div>
+    
+    <div class="segundoContenedor">
+        
+        <img class="perritoimg" src="/media/perritoEjemplo.png" alt="">
+        
+        <div class="flechaContenedor">
+            <div class="flechaGrupo">
+                <img class="flechaimg" src="/media/flechitaimg.png" alt="">
+                <p class="elegant mispapas">¡Mis papàs se van a casar!</p>
+            </div>
+            <div class="segundoTexto">
+                 <p class="lejour yquieren">Y quieren que seas parte</p>
+                 <p class="opensans eldia">El dìa 29 de noviembre haremos una pequeña celebraciòn familiar etc,,,</p>
+            </div>
+        </div>
+    </div>
+    <div class="tercerContenedor">
+        <div class="button-container">
+            <button class="info-btn" id="btn-lugar">
+                Lugar <span class="arrow">&#9660;</span>
+            </button>
+            <button class="info-btn" id="btn-fecha">
+                Fecha <span class="arrow">&#9660;</span>
+            </button>
+            <button class="info-btn" id="btn-hora">
+                Hora <span class="arrow">&#9660;</span>
+            </button>
+        </div>
+    
+        <div class="info-container">
+            <p id="info-lugar" class="info-content">Dirección: Calle Ejemplo 123, Ciudad</p>
+            <p id="info-fecha" class="info-content">Fecha: 29 de noviembre de 2024</p>
+            <p id="info-hora" class="info-content">Hora: 17:00 hs</p>
+        </div>
+
+    </div>
+
+    <div class="cuartoContenedor">
+        <h1 elegant>¡Juguemos!</h1>
+        <div id="quiz-container">
+            <div id="question-container">
+                <!-- Aquí se cargarán las preguntas -->
+            </div>
+            <button id="next-btn" style="display: none;" onclick="nextQuestion()">Siguiente</button>
+        </div>
+        <div id="score-container"></div>
+    </div>
+
+    <div class="quintoContenedor">
+
+        <p>confirma tu presencia</p>
+        
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/botones.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'Le Jour Script';
+    src: url('/fuentes/Le%20Jour%20Script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Higuen Serif';
+  src: url('/fuentes/Higuen%20Serif.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Botones de respuesta */
+button.answer-btn {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+  }
+  
+  button.answer-btn:hover {
+    background-color: #ddd;
+  }
+  
+  button.correct {
+    background-color: #4CAF50; /* Verde para respuestas correctas */
+    color: white;
+  }
+  
+  button.wrong {
+    background-color: #f44336; /* Rojo para respuestas incorrectas */
+    color: white;
+  }
+  
+  /* Botón siguiente oculto hasta que se responda */
+  #next-btn {
+    padding: 10px;
+    font-size: 16px;
+    display: none;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #next-btn:hover {
+    background-color: #005f73;
+  }
+
+
+.lejour{
+  font-family: 'Le Jour Script', cursive;
+}
+  
+/*primer contenedor*/ 
+
+.primerContenedor {
+    /* Configuración del tamaño de la pantalla completa */
+    max-width:100vw;
+    height: 100vh;
+    
+    /* Fondo con la imagen de los novios */
+    background-image: url('/media/imgNovios.png');
+    background-size: cover;  /* La imagen cubre todo el contenedor */
+    background-position: center;  /* Centrar la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    
+    /* Centramos el contenido de texto dentro del contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.primerContenedor div {
+    position: relative; /* Para superponer el texto sobre la imagen */
+    z-index: 1; /* Asegurarse de que el texto esté por encima de la imagen */
+    align-content: space-around;
+  }
+
+
+.primerContenedor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Un filtro oscuro para resaltar el texto */
+    z-index: 0; /* Asegurarse de que el filtro quede debajo del texto */
+}
+
+
+
+
+
+.teInvitamos{
+    
+    letter-spacing: 0.5rem ;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Higuen Serif', serif;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+   
+}
+.civil{
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.5); /* Blanco con 70% de opacidad */
+    font-family: 'Le Jour Script', cursive;
+    margin-top: 0%;
+    padding-top: 0%; 
+ 
+}
+.ayg{
+  color: white;
+    font-size: 0.9rem;
+}
+
+/*segundo contenedor*/
+.segundoContenedor {
+  max-width:100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #e2ded0;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.perritoimg {
+  width: 30vw; /* La imagen ocupa el ancho completo del contenedor */
+}
+
+.flechaContenedor{
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10%;
+}
+.mispapas{
+  font-size: xx-large;
+  margin-bottom: 0%;
+  color: #334720;
+  font-family: 'Higuen Serif', serif;
+}
+.yquieren{
+  font-size: xx-large;
+  margin-top: 0%;
+  color: #334720;
+}
+.eldia{
+  font-size: x-large;
+  font-family: 'Open Sans', sans-serif;
+  color: #334720;
+}
+
+/*tercer contenedor*/ 
+
+/* Tercer contenedor: Botones interactivos */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Espacio entre los botones */
+  margin-top: 20px;
+}
+
+.info-btn {
+  background-color: #334720;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.info-btn .arrow {
+  font-size: 12px;
+}
+
+.info-btn:hover {
+  background-color: #2a3b1a;
+}
+
+.info-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.info-content {
+  font-size: 18px;
+  color: #334720;
+  display: none;
+}
+
+/*cuarto contenedor*/
+.cuartoContenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #af9260;
+  color: white;
+  
+}
+
+.cuartoContenedor h1{
+  letter-spacing: 5px;
+  font-family: 'Higuen Serif', serif;
+  font-weight: lighter;
+}
+
+.quintoContenedor{
+  height: 200px;
+  max-width:  100vw;
+}
+
+.correct {
+  background-color: green;
+  color: white;
+}
+
+.wrong {
+  background-color: red;
+  color: white;
+}
